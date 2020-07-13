@@ -8,6 +8,7 @@ export const PureComponent = ({ unmountCallback }) => {
     setLoaded(true);
 
     return () => unmountCallback();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return <span>{`Is loaded: ${loaded}`}</span>;

@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { MockFunctionWithParams, MockFunctionWithNoParams} from './MockFunctions';
+import { MockFunctionWithParams, MockFunctionWithNoParams } from './MockFunctions';
 
 describe('MockFunctionWithNoParams', () => {
   it('should call the action function on button click', () => {

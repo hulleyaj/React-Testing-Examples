@@ -1,6 +1,12 @@
 import React from 'react';
 
-const ChildComponent = () => <div className="Child-div" />;
+const SubChildComponent = () => <div className="SubChild-div" />;
+
+export const ChildComponent = () => (
+  <div className="Child-div">
+    <SubChildComponent />
+  </div>
+);
 
 const ParentComponent = () => (
   <>
